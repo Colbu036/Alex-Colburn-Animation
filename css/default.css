@@ -1,0 +1,202 @@
+/* this is where all of your CSS styles go */
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.mono {
+	font-family: 'Fjalla One';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+#grid_container {
+	width: 450px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -450px;
+}
+
+#grid_container2 {
+	width: 450px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -100px;
+	margin-left: 10px;
+}
+
+#s {
+	position: relative;
+	-webkit-animation: s_move 2s;	
+	-webkit-animation-fill-mode: forwards;
+	cubic-bezier(1,0,0,1);
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes s_move {
+	0% {top:0px; left:0px }
+	50% {top:300px; left:0px; }
+	100% {top:0px; left:-25px;}
+}
+
+#o {
+	position: relative;
+	-webkit-animation: o_move 2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes o_move {
+	0% {left:0px; }
+	100% {left:40px; }
+}
+
+#c {
+	position: relative;
+	-webkit-animation: c_move 2s;	
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes c_move {
+	0% {right:0px; }
+	100% {right:100px; }
+
+}
+
+#c2 {
+	position: relative;
+	-webkit-animation: c2_move 2s;	
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes c2_move {
+	0% { top:0px; left:0px;}
+	33% {top:100px; left:0px;}
+	66% {top:100px; left:410px;}
+	100% {top:0px; left:410px;}
+	
+}
+
+#e {
+	position: relative;
+	-webkit-animation: e_move 2s linear;	
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes e_move {
+	0% { top:0px; left:0px;}
+	25% {top:-150px; left:500px;}
+	75% {top:-300px; left:0px;}
+	100% {top:0px; left:-30px;}
+}
+
+#r {
+	position: relative;
+	-webkit-animation: r_move 2s linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+
+	
+}
+
+@-webkit-keyframes r_move {
+	0% {top:0px; left:0px;}
+	33% {top:-75px; left:0px;}
+	66% {top:-75px; left:-165px;}
+	100% {top:0px; left:-165px;}
+}
+
+#p {
+	position: relative;
+	-webkit-animation: p_move 2s linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes p_move {
+	0% {top:0px; right:0px;}
+	33% {top:-75px; right:0px;}
+	66% {top:-75px; right:-70px;}
+	100% {top:0px; right:-70px;}
+}
+
+#l {
+	position: relative;
+	-webkit-animation: l_move 2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes l_move {
+	0% {left:0px;}
+	100% {left:-175px;}
+}
+
+#a {
+	position: relative;
+	-webkit-animation: a_move 2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes a_move {
+	0% {top:0px; left:0px;}
+	50% {top: 50px; left:-50px;}
+	100% {top:0px; left:-125px;}
+}
+
+#y {
+	position: relative;
+	-webkit-animation: y_move 2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;	
+	
+}
+
+@-webkit-keyframes y_move {
+	0% {left:0px;}
+	100% {left:75px;}
+}
+
+#e2 {
+	position: relative;
+	-webkit-animation: e2_move 2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;	
+}
+
+@-webkit-keyframes e2_move {
+	0% {top:0px; left:0px;}
+	50% {top: -175px; left:-175px;}
+	100% {top:0px; left:-332px;}
+}
+
+#r2 {
+	position: relative;
+	-webkit-animation: r2_move,r2_fade 2s linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes r2_move {
+	0% { left:0px;}
+	10% {left: -12;}
+	80% {left: -120px;}
+	100% { left:-120px;}
+}
+
+@-webkit-keyframes r2_fade {
+	0% {opacity:100;}
+	10% {opacity: 0;}
+	80% {opacity: 0;}
+	100% {opacity:100;}
+}
